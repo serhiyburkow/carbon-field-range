@@ -14,7 +14,7 @@
     "require": {
         "htmlburger/carbon-fields": "^3.0"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "files": [
             "field.php"
