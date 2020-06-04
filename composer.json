@@ -1,0 +1,26 @@
+{
+    "name": "crayflatline/carbon-field-range",
+    "description": "Carbon Fields extension, that adds a range field type.",
+    "keywords": ["wordpress", "carbon-field", "carbon-field-range"],
+    "homepage": "https://github.com/CrayFlatline/carbon-field-range/",
+    "type": "library",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Cray Flatline",
+            "email": "cray@sscgroup.net"
+        }
+    ],
+    "require": {
+        "htmlburger/carbon-fields": "^3.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "field.php"
+        ],
+        "psr-4": {
+            "Carbon_Field_Range\\": "core/"
+        }
+    }
+}
