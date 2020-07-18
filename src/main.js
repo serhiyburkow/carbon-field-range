@@ -3,7 +3,7 @@
  */
 import { Component } from '@wordpress/element';
 
-class NumberField extends Component {
+class RangeField extends Component {
 	/**
 	 * Handles the change of the input.
 	 *
@@ -31,17 +31,28 @@ class NumberField extends Component {
 		const { handleChange } = this;
 
 		return (
-			<input
-				type="range"
-				id={id}
-				name={name}
-				value={value}
-				max={field.max}
-				min={field.min}
-				step={field.step}
-				className="cf-range__input"
-				onChange={this.handleChange}
-			/>
+			<div id={id}>
+				<input
+					type="number"
+					name={`${name}[from]`}
+					value={value.from}
+					max={field.max}
+					min={field.min}
+					step={field.step}
+					className="cf-range__input"
+					onChange={this.handleChange}
+				/>
+				<input
+					type="number"
+					name={`${name}[to]`}
+					value={value.from}
+					max={field.max}
+					min={field.min}
+					step={field.step}
+					className="cf-range__input"
+					onChange={this.handleChange}
+				/>
+			</div>
 		);
 	}
 }

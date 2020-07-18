@@ -9,4 +9,4 @@ import { registerFieldType } from '@carbon-fields/core';
 import './style.scss';
 import RangeField from './main';
 
-registerFieldType( 'number', RangeField );
+registerFieldType( 'range', RangeField );
