@@ -31,7 +31,7 @@ class RangeField extends Component {
 		const { handleChange } = this;
 
 		return (
-			<div id={id}>
+			<div id={id} className="cf-range__wrapper">
 				<input
 					type="number"
 					name={`${name}[from]`}
@@ -45,7 +45,7 @@ class RangeField extends Component {
 				<input
 					type="number"
 					name={`${name}[to]`}
-					value={value.from}
+					value={value.to}
 					max={field.max}
 					min={field.min}
 					step={field.step}
